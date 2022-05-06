@@ -1,0 +1,8 @@
+@startuml TestAPI
+Client -> Server: Authentication Request
+Server --> Client: Authentication Response
+
+Server -> TestAPI: Another authentication Request
+TestAPI --> Server: another authentication Response
+Server --> Client: another authentication Response
+@enduml

@@ -1,0 +1,2 @@
+GET https://swapi.dev/api/planets/3/
+content-type: application/json
