@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facedes\DB;
+use Illuminate\Support\Facades\DB;
 
 class HelloController extends Controller
 {
@@ -15,15 +15,5 @@ class HelloController extends Controller
             $item = DB::select('select * from people where id = :id');
         }
         return view('hello.index', ['items' => $item]);
-    }
-
-    public function create(Requset $requset) {
-        $param = [
-            'name' => '$requset->name',
-            'mail' => '$requset->mail',
-            'age' => '$requset->age',
-        ];
-        DB::insert('insert into poeple(name,mail,age) values(:name,:mail,:age)', $param);
-        return redirect('/hello');
     }
 }
