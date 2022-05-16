@@ -1,4 +1,4 @@
 # laravel-firstAppExample
 
-■ 起動
+■ 起動コマンド
 php artisan serve
