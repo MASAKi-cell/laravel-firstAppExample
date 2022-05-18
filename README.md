@@ -2,4 +2,3 @@
 
 ■ 起動コマンド：
 php artisan serve
-
